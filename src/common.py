@@ -55,13 +55,6 @@ SYSTEM_PROMPT = (
     "Give a clear, concise final answer with the key numbers."
 )
 
-RUN_PYTHON_DESCRIPTION = (
-    "Execute Python code against the pandas DataFrame `df`, which holds "
-    "annual financial statement data (revenue, expenses, income line items) "
-    "indexed by `year`. Use print() to output whatever you want to see back."
-)
-
-
 def run_python(code: str) -> str:
     """Execute code in the shared namespace, capture stdout, return it as text.
 
